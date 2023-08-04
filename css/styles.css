@@ -57,6 +57,62 @@ img{
 .no_padding{
     padding: 0;
 }
-.centrar-texto{
+.centrar_texto{
     text-align: center;
+}
+
+/**header**/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover; /**este backgroind size con valor cover quiere decir que cubrira todo el espacio y no se repetira en caso que no quepa.**/
+    background-repeat: no-repeat;
+    background-position: center center; /**se enfocara unicamente en el centro del eje X  y Y, por eso 2 center**/
+}
+.header__texto{
+    text-align: center;
+    color: var(--beige);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+
+/**contenedor**/
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between; /**aqui alineamos horizontalmente**/
+        align-items: center; /**aqui verticalmente**/
+        gap: 2rem;
+    }
+}
+.logo{
+    color: white;
+}
+.logo__nombre{
+    font-weight: normal;
+}
+.logo__bold{
+    font-family: var(--fuenteText);
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace{
+    display: block; /**para que se muestre de arriba para abajo**/
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+.navegacion__enlace:hover{
+    color: var(--beige);
 }
