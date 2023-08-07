@@ -33,6 +33,7 @@ a{
 }
 h1,h2,h3,h4{
     font-family: var(--fuenteHeadings);
+    line-height: 1.2;
 }
 h1{
     font-size: 4.8rem;
@@ -124,4 +125,53 @@ img{
         grid-template-columns: 70% 30%;/**tambien se puede colocar fracciones, porque el blog tendra mas espacio que el sidebar, por lo que seria 2fr de blog y 1fr de sidebar**/
         gap: 4rem;
     }
+}
+
+/**Blog**/
+.entrada{
+    border-bottom: 1px solid var(--verdeClaro); /**agregamos una linea solida de 10 pixeles de color verde**/
+    margin-bottom: 2rem; /**agregamos su respectiva separacion para que se vea**/
+}
+.entrada:last-of-type{ /**recordemonos que el last of type es la ultima etiqueta donde aparece la clase**/
+    border: none;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteHeadings);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--naranja);
+    color: white;
+    padding: 1rem 3rem;
+    text-transform: uppercase; /**este para que todo sea en mayusculas**/
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block; /**ya no se mostrara el gran boton que se mira como barra**/
+    }
+}
+
+/**Aside**/
+.boton_secundario{
+    background-color: var(--verdeOscuro);
+}
+.cursos{
+    padding: 0;
+    list-style-type: none; /**aqui quitamos el punto que se coloca el el lado izquierdo como lista**/
+}
+.widget_curso{
+    font-size: 2rem;
+    border-bottom: 1px solid var(--verdeClaro);
+    margin-bottom: 2rem;
+}
+.widget_curso:last-of-type{
+    border-bottom: 0;
+}
+.widget_curso__label{
+    font-weight: bold;
+}
+.widget_curso__informacion{
+    font-weight: 400;
 }
