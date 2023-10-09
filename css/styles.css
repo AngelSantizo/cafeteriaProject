@@ -193,3 +193,36 @@ img{
         column-gap: 2rem;
     }
 }
+
+/**sobre los cursos**/
+.curso{
+    padding: 3rem 0; /*para que haya una separacion tanto de arriba como de abajo*/
+    border-bottom: 1px solid var(--verdeClaro);
+}
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr; /*1 fraccion ocupara la imagen y la informacion ocupara 2 fracciones*/
+        column-gap: 2rem; /*agrerguele separacion a esa madre*/
+    }
+}
+
+.curso:last-of-type{
+    border-bottom: none;
+}
+
+/**pondremos aqui los labels del curso**/
+.widget_curso{
+    font-size: 2rem;
+    border-bottom: 1px solid var(--verdeClaro);
+    margin-bottom: 2rem;
+}
+.curso:last-of-type{
+    border-bottom: 0;
+}
+.curso__label{
+    font-weight: bold;
+}
+.curso__informacion{
+    font-weight: 400;
+}
