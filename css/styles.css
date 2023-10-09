@@ -80,7 +80,9 @@ img{
         margin-top: 15rem;
     }
 }
-
+.barra{
+    padding-top: 4rem;
+}
 /**contenedor**/
 @media (min-width: 768px) {
     .barra{
@@ -174,4 +176,20 @@ img{
 }
 .widget_curso__informacion{
     font-weight: 400;
+}
+
+/**footer**/
+.footer{
+    background-color: var(--verdeOscuro);
+    padding-bottom: 3rem ;
+    margin-top: 2rem;
+}
+
+/**sobre nosotros**/
+@media (min-width: 768px) {
+    .Sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
