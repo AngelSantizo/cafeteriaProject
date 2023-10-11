@@ -232,3 +232,11 @@ img{
     font-family: var(--fuenteText);
     font-size: 2rem;
 }
+
+/**Contacto**/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover; /*recordemos que esta etiqueta ayuda que la imagen se ajuste tal al tamano del contenedor y puede que la recorte*/
+    background-repeat: no-repeat; /*y si la imagen fuera pequeno (que no es el caso) entonces se repetira pero dejemoslo asi*/
+}
