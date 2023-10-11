@@ -240,3 +240,32 @@ img{
     background-size: cover; /*recordemos que esta etiqueta ayuda que la imagen se ajuste tal al tamano del contenedor y puede que la recorte*/
     background-repeat: no-repeat; /*y si la imagen fuera pequeno (que no es el caso) entonces se repetira pero dejemoslo asi*/
 }
+
+/**Contacto**/
+.formulario{
+    background-color: var(--verdeClaro);
+    margin: -5rem auto 0 auto; /*recordemos que el margin es el limite del elemento como tal, el padding solo extiende el color mas el margen se quedo igual.*/
+    width: 95%;
+    padding: 5rem;
+    border-radius: 2rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    color: var(--beige);
+    text-align: right;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--beige);
+}
+.campo__field--textarea{
+    height: 20rem;
+}
+.boton:hover{
+    cursor: pointer;
+}

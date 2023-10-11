@@ -45,16 +45,29 @@
         <!--agregaremos aqui el formulario para que nos contacten y dejen sus datos-->
         <form class="formulario">
             <div class="campo">
-                <label for="nombre_formulario">Nombre</label> <!--el for ayuda que cuando alguien presione el texto, lo redireccione al input-->
-                <input type="text" placeholder="Tu nombre" id="nombre_formulario"> <!--recordemos que no es value para mostrar el texto, es placeholder-->
+                <label class="campo__label"for="nombre_formulario">Nombre</label> <!--el for ayuda que cuando alguien presione el texto, lo redireccione al input-->
+                <input 
+                    class="campo__field"
+                    type="text" 
+                    placeholder="Tu nombre" 
+                    id="nombre_formulario"
+                > <!--recordemos que no es value para mostrar el texto, es placeholder-->
             </div>
             <div class="campo">
-                <label for="email_formulario">E-mail</label> 
-                <input type="email" placeholder="Tu E-mail" id="email_formulario"> 
+                <label class="campo__label" for="email_formulario">E-mail</label> 
+                <input 
+                    class="campo__field"
+                    type="email" 
+                    placeholder="Tu E-mail" 
+                    id="email_formulario"
+                > 
             </div>
             <div class="campo">
-                <label for="mensaje_formulario">Mensaje</label> 
-                <textarea name="" id="mensaje_formulario"></textarea>
+                <label class="campo__label" for="mensaje_formulario">Mensaje</label> 
+                <textarea 
+                    class="campo__field campo__field--textarea"   
+                    id="mensaje_formulario">
+                </textarea>
             </div>
 
             <!--Aqui colocaremos el boton para que envien la informacion no como un boton sino como etiqueta input-->
