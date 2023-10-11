@@ -226,3 +226,9 @@ img{
 .curso__informacion{
     font-weight: 400;
 }
+
+/**Entrada**/
+.entrada__contenido{
+    font-family: var(--fuenteText);
+    font-size: 2rem;
+}
