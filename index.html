@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria</title>
     <!--linkeamos las hojas de estilo-->
-    <link rel="stylesheet" href="css/normalize.css">
     <!--Agregaremos fuenetes, en medio de normalize y css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+
+    <!--Preload, recordemos que cuando hacemos el preload tambien debemos colocar el archivo original debajo del mismo-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
