@@ -52,7 +52,12 @@
 
             <article class="entrada"> 
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="entrada__imagen">
+                    <!--Agregaremos la etiqueta picture para mejorar el performance de la imagen, tambien se le puede agregar loading lazy-->
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="entrada__imagen">
+                        <!--Si la imagen .webp puede soportar en el navegador entonces cargara con ese formato sino cargara el image.jpg-->
+                    </picture>
                 </div>
 
                 <div class="entrada_contenido">
@@ -65,7 +70,10 @@
 
             <article class="entrada"> 
                 <div class="entrada__imagen">
-                    <img  loading="lazy" src="img/blog2.jpg" alt="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="entrada__imagen">
+                    </picture>
                 </div>
 
                 <div class="entrada_contenido">
@@ -78,7 +86,10 @@
 
             <article class="entrada"> 
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="entrada__imagen"><!--el lazy loading permite que cargue toda la pagina hasta que la imagen tambien se descargue-->
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="entrada__imagen">
+                    </picture>
                 </div>
 
                 <div class="entrada_contenido">
